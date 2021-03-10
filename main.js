@@ -42,3 +42,20 @@ function minmaxElement() {
     console.log(`Output: Max = ${maxValue}, Min =${minValue} `)
 
 }
+function isSorted() {
+    let array = [2, 3, 5]
+    console.log('Input: ', array)
+
+    let sorted = true
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] < array[i - 1]) {
+            sorted = false
+            break
+
+        }
+
+
+    }
+
+    console.log(`Output: sorted = ${sorted}`)
+}
